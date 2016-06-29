@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form method="post" action="#" th:action="@{/user}" th:object="${user}">
+
+        ID <input th:field="*{id}"/>
+        Password <input th:field="*{password}"/>
+        Name <input th:field="*{name}"/>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">저장</button>
+
+
+            <button class="btn btn-lg btn-danger btn-block" type="reset">취소</button>
+
+</form>
+
+</body>
+</html>
